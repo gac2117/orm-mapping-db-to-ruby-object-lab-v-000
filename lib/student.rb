@@ -44,7 +44,7 @@ class Student
     DB[:conn].execute(sql).map do |row|
       student = self.new
       student.name = row[1]
-      student 
+      student
     end
   end
 
