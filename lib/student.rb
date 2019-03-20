@@ -73,7 +73,7 @@ class Student
       SQL
     DB[:conn].execute(sql, x)
   end
-  
+
   def save
     sql = <<-SQL
       INSERT INTO students (name, grade)
