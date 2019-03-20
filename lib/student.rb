@@ -61,10 +61,7 @@ class Student
       SELECT * FROM students
       WHERE grade = 10 LIMIT 1
       SQL
-    DB[:conn].execute(sql).map do |row|
-      student = self.new
-      student.id = row[0]
-      student.id
+    DB[:conn].execute(sql)
     end
   end
 
